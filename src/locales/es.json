@@ -1,0 +1,25 @@
+{
+  "home": {
+    "average-performance": "Rendimiento Promedio",
+    "average": {
+      "Volts": "Voltios Promedio",
+      "Watts": "Vatios Promedio",
+      "hp": "HP Promedio"
+    }
+  },
+  "health-checks": {
+    "health-check-records": "Registros de Chequeos de Salud",
+    "health-checks": "Chequeos de Salud",
+    "table": {
+      "records-id": "ID de Registros",
+      "treadmill-id": "ID de Cinta",
+      "serial-number": "Número de Serie",
+      "center-name": "Nombre del Centro",
+      "date": "Fecha",
+      "Time": "Hora",
+      "Volts": "Voltios",
+      "Watts": "Vatios",
+      "hp": "HP"
+    }
+  }
+}

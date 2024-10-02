@@ -1,11 +1,14 @@
 <script>
 
+import LanguageSwitcher from "./language-switcher.component.vue";
+
 export default {
   name: 'toolbar-content',
+  components: {LanguageSwitcher},
   data(){
     return {
       items: [
-        {label: 'home', to: '/home'},
+        {label: 'Home', to: '/home'},
         {label: 'Health Checks', to: '/analytics/health-checks'}
       ]
     }
@@ -28,6 +31,9 @@ export default {
           <router-link v-for="item in items" :key="item.label"  :to="item.to">
             <pv-button class="p-button-text"  severity="info ">{{ item.label }}</pv-button>
           </router-link>
+
+          <language-switcher/>
+
         </div>
       </template>
     </pv-toolbar>

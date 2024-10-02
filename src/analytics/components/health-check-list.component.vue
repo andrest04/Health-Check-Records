@@ -49,7 +49,7 @@ export default {
 <template>
   <div class="health-check-list-container">
     <div class="card">
-      <h1>Health Check Records</h1>
+      <h1>{{ $t('health-checks.health-check-records') }}</h1>
       <pv-data-table :value="combinedData" removableSort paginator :rows="5" :rowsPerPageOptions="[5, 10, 20]" tableStyle="min-width: 50rem"
                      paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
                      currentPageReportTemplate="{first} to {last} of {totalRecords}">
@@ -59,15 +59,15 @@ export default {
         <template #paginatorend>
           <pv-button type="button" icon="pi pi-download" text />
         </template>
-        <pv-column field="id" header="Record Id" sortable style="width: 10%"/>
-        <pv-column field="treadmillId" header="Treadmill Id" sortable style="width: 10%"/>
-        <pv-column field="serialNumber" header="Serial Number" sortable style="width: 10%"/>
-        <pv-column field="centerName" header="Center Name" sortable style="width: 10%"/>
-        <pv-column field="date" header="Date" sortable style="width: 10%"/>
-        <pv-column field="time" header="Time" sortable style="width: 10%"/>
-        <pv-column field="volts" header="Volts" sortable style="width: 10%"/>
-        <pv-column field="watts" header="Watts" sortable style="width: 10%"/>
-        <pv-column field="hp" header="HP" sortable style="width: 10%"/>
+        <pv-column field="id" :header="$t('health-checks.table.records-id')" sortable style="width: 10%"/>
+        <pv-column field="treadmillId" :header="$t('health-checks.table.treadmill-id')" sortable style="width: 10%"/>
+        <pv-column field="serialNumber" :header="$t('health-checks.table.serial-number')" sortable style="width: 10%"/>
+        <pv-column field="centerName" :header="$t('health-checks.table.center-name')" sortable style="width: 10%"/>
+        <pv-column field="date" :header="$t('health-checks.table.date')" sortable style="width: 10%"/>
+        <pv-column field="time" :header="$t('health-checks.table.Time')" sortable style="width: 10%"/>
+        <pv-column field="volts" :header="$t('health-checks.table.Volts')" sortable style="width: 10%"/>
+        <pv-column field="watts" :header="$t('health-checks.table.Watts')" sortable style="width: 10%"/>
+        <pv-column field="hp" :header="$t('health-checks.table.hp')" sortable style="width: 10%"/>
       </pv-data-table>
     </div>
   </div>

@@ -16,6 +16,7 @@ import DataTable from "primevue/datatable";
 import Column from "primevue/column";
 import Textarea from "primevue/textarea";
 import Card from "primevue/card";
+import i18n from "./i18n.js";
 
 const app = createApp(App)
 
@@ -36,7 +37,9 @@ app.component('pv-button', Button)
     .component('pv-column', Column)
     .component('pv-card', Card)
     .component('pv-textarea', Textarea)
+    .component('pv-select-button', SelectButton);
 
+app.use(i18n);
 
 app.use(router);
 

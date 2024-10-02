@@ -1,0 +1,25 @@
+{
+  "home": {
+    "average-performance": "Average Performance",
+    "average": {
+      "Volts": "Average Volts",
+      "Watts": "Average Watts",
+      "hp": "Average HP"
+    }
+  },
+  "health-checks": {
+    "health-check-records": "Health Check Records",
+    "health-checks": "Health Checks",
+    "table": {
+      "records-id": "Records ID",
+      "treadmill-id": "Treadmill ID",
+      "serial-number": "Serial Number",
+      "center-name": "Center Name",
+      "date": "Date",
+      "Time": "Time",
+      "Volts": "Volts",
+      "Watts": "Watts",
+      "hp": "HP"
+    }
+  }
+}

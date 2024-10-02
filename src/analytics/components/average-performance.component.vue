@@ -46,12 +46,11 @@ export default {
 <template>
   <div class="home-container">
     <pv-card style="width: 25rem; overflow: hidden">
-      <template #title>Average Performance</template>
-      <template #subtitle>Overall Treadmill Stats</template>
+      <template #title>{{ $t('home.average-performance') }}</template>
       <template #content>
-        <p><strong>Average Volts:</strong> {{ averagePerformance.avgVolts }}</p>
-        <p><strong>Average Watts:</strong> {{ averagePerformance.avgWatts }}</p>
-        <p><strong>Average HP:</strong> {{ averagePerformance.avgHP }}</p>
+        <p><strong> {{ $t('home.average.Volts') }}: </strong> {{ averagePerformance.avgVolts }}</p>
+        <p><strong>{{ $t('home.average.Watts') }}:</strong> {{ averagePerformance.avgWatts }}</p>
+        <p><strong>{{ $t('home.average.hp') }}:</strong> {{ averagePerformance.avgHP }}</p>
       </template>
     </pv-card>
   </div>
