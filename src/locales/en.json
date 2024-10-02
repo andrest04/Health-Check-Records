@@ -21,5 +21,9 @@
       "Watts": "Watts",
       "hp": "HP"
     }
+  },
+  "page-not-found": {
+    "description": "Oops! The page you're looking for doesn't exist.",
+    "back-home": "Go Home"
   }
 }

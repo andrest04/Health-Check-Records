@@ -21,5 +21,9 @@
       "Watts": "Vatios",
       "hp": "HP"
     }
+  },
+  "page-not-found": {
+    "description": "Ups! La página que estás buscando no existe",
+    "back-home": "Volver al inicio"
   }
 }

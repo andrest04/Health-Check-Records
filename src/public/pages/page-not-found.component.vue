@@ -7,8 +7,8 @@ export default {
 <template>
   <div class="container">
     <h1>404</h1>
-    <p>Oops! The page you're looking for doesn't exist.</p>
-    <a href="/" class="button">Go Home</a>
+    <p>{{ $t('page-not-found.description') }}</p>
+    <a href="/" class="button">{{ $t('page-not-found.back-home') }}</a>
   </div>
 </template>
 
